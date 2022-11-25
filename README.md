@@ -12,4 +12,8 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 
 # log 2022/11/25
-
+1. 添加了ts支持
+2. 添加了状态管理器 pinia
+3. 全局添加了sass
+4. 全局添加了quasar ui 框架
+5. 添加了全局路由router
