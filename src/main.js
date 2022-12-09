@@ -1,7 +1,7 @@
 // FILE: main.js
 
 import { createApp } from 'vue'
-import { Quasar } from 'quasar'
+import { Quasar, Loading } from 'quasar'
 import { createPinia } from 'pinia'
 import router from './router/index' // import vue-router
 
@@ -32,8 +32,15 @@ myApp.use(Quasar, {
       negative: '#C10015',
       info: '#31CCEC',
       warning: '#F2C037'
-    }
+    },
+    Loading
   }, // import Quasar plugins and add here
+  config: {
+    loading: {
+      delay: 400,
+      message: "Loading..."
+    }
+  }
 })
 myApp.use(createPinia())
 
