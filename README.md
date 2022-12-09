@@ -17,3 +17,9 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 3. 全局添加了sass
 4. 全局添加了quasar ui 框架
 5. 添加了全局路由router
+
+
+# log 2022/12/09
+1. 添加了banner
+2. 加入了新的电影数据
+3. 电影卡片更新
