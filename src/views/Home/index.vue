@@ -57,138 +57,88 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
           </swiper-slide>
           <swiper-slide>
             <section class="Hero Hero--hasImage">
-              <img class="banner" src="https://occ-0-3996-3997.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW5dIfK8UT_AMFn0w8xFWI14gLfA0_mcNYQopk6Fh_IVNGwSeh7JRCVt89pxeB6kY7_cdgupaqlnisrYwvhz32wlFUHAO_RaWj9L.jpg?r=f10" alt="">
+              <img class="banner" src="https://amc-theatres-res.cloudinary.com/image/upload/c_fill,f_auto,fl_lossy,g_auto,h_450,q_auto,w_1600/v1666970795/amc-cdn/production/2/movies/68300/68331/HeroDesktopDynamic/145150.jpg" alt="">
               <q-card class="info_box">
-                <img src="https://occ-0-3996-3997.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABQtQI4ADK8z4sP66xTSEHer4zc8JNIbTcGJbleCQ1ClYA04mG0jEGLe9s2A-0eJfkOZLd2HllyJqgJPqdn9gbeA2Xx7Z95jysR6mI9_39dkdVyHXEnFHlWZYXBEuc_muGDGw-gk4wwFweCIPogFvuGvtlu0B0Gn-zaS-c070ReXHDg87E0RUsg.png?r=bfa" alt="Troll" class="logo" data-uia="title-logo"/>
-                <h2 class="title">Troll</h2>
+                <h2 class="title">Violent Night</h2>
                 <p>2022 | Maturity Rating:TV-14 | 1h 43m | Action & Adventure</p>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5V6H16C17.1046 6 18 6.89543 18 8V16C18 17.1046 17.1046 18 16 18H2C0.89543 18 0 17.1046 0 16V8C0 6.89543 0.89543 6 2 6H4V5ZM12 5V6H6V5C6 3.34315 7.3431 2 9 2C10.6569 2 12 3.34315 12 5ZM2 8V16H16V8H2ZM8 10V14H10V10H8Z" fill="white"></path></svg>
-                Unavailable on Basic with ads plan due to licensing restrictions.
-When an explosion in the Norwegian mountains awakens an ancient troll, officials appoint a fearless paleontologist to stop it from wreaking deadly havoc.
-                <p>Starring:Ine Marie Wilmann, Kim22 Falck, Mads Sjøgård Pettersen</p>  
+                David Harbour ('Black Widow') stars in this thrilling holiday movie about a team of mercenaries who take a group of people hostage on Christmas Eve, never expecting their biggest combatant to be Santa Claus. Action producer David Leitch ('John Wick') teams with the writers of the 'Sonic the Hedgehog' franchise (Patrick Casey and Josh Miller), bringing an edge to the classic holiday cheer and showing why this Nick is no saint.
               </q-card>
             </section>
           </swiper-slide>  
+
         </Swiper> 
 
         <div class="movies_content">
           
           <h3>recommend</h3>
           <div class="q-pa-md row items-start q-gutter-md">
-          <q-card class="my-card" flat bordered>
-              <q-img
-                src="https://cdn.quasar.dev/img/parallax2.jpg"
-              />
+            <div class="q-pa-md row items-start q-gutter-md">
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1664804476/amc-cdn/production/2/movies/56500/56467/PosterDynamic/143958.jpg">
 
-              <q-card-section>
-                <div class="text-overline text-orange-9">Overline</div>
-                <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-                <div class="text-caption text-grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </q-card-section>
+                <q-card-section>
+                  <div class="text-h6">Black Panther: Wakanda Forever</div>
+                  <div class="text-subtitle2">2 HR 41 MINPG13Released Nov 11, 2022</div>
+                </q-card-section>
 
-              <q-card-actions>
-                <q-btn flat color="dark" label="Share" />
-                <q-btn flat color="primary" label="Book" />
+                <q-card-section class="q-pt-none">
+                  tag： {{ 'war' }}
 
-                <q-space />
+                </q-card-section>
+              </q-card>
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1668003212/amc-cdn/production/2/movies/68300/68331/PosterDynamic/145720.jpg">
 
-                <q-btn
-                  color="grey"
-                  round
-                  flat
-                  dense
-                  :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'"
-                  @click="expanded = !expanded"
-                />
-              </q-card-actions>
+                <q-card-section>
+                  <div class="text-h6">Violent Night</div>
+                  <div class="text-subtitle2">1 HR 52 MIN</div>
+                </q-card-section>
 
-              <q-slide-transition>
-                <div v-show="expanded">
-                  <q-separator />
-                  <q-card-section class="text-subitle2">
-                    {{ 111 }}
-                  </q-card-section>
-                </div>
-              </q-slide-transition>
-            </q-card>
-            <q-card class="my-card" flat bordered>
-              <q-img
-                src="https://cdn.quasar.dev/img/parallax2.jpg"
-              />
+                <q-card-section class="q-pt-none">
+                  tag： {{ 'war' }}
 
-              <q-card-section>
-                <div class="text-overline text-orange-9">Overline</div>
-                <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-                <div class="text-caption text-grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </q-card-section>
+                </q-card-section>
+              </q-card>
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1663766838/amc-cdn/production/2/movies/56500/56477/PosterDynamic/143261.jpg">
 
-              <q-card-actions>
-                <q-btn flat color="dark" label="Share" />
-                <q-btn flat color="primary" label="Book" />
+                <q-card-section>
+                  <div class="text-h6">Strange World</div>
+                  <div class="text-subtitle2">1 HR 42 MIN</div>
+                </q-card-section>
 
-                <q-space />
+                <q-card-section class="q-pt-none">
+                  tag： {{ 'war' }}
 
-                <q-btn
-                  color="grey"
-                  round
-                  flat
-                  dense
-                  :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'"
-                  @click="expanded = !expanded"
-                />
-              </q-card-actions>
+                </q-card-section>
+              </q-card>
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1663614001/amc-cdn/production/2/movies/69600/69554/PosterDynamic/143200.jpg">
 
-              <q-slide-transition>
-                <div v-show="expanded">
-                  <q-separator />
-                  <q-card-section class="text-subitle2">
-                    {{ 111 }}
-                  </q-card-section>
-                </div>
-              </q-slide-transition>
-            </q-card>
-            <q-card class="my-card" flat bordered>
-              <q-img
-                src="https://cdn.quasar.dev/img/parallax2.jpg"
-              />
+                <q-card-section>
+                  <div class="text-h6">The Menu</div>
+                  <div class="text-subtitle2">1 HR 47 MIN</div>
+                </q-card-section>
 
-              <q-card-section>
-                <div class="text-overline text-orange-9">Overline</div>
-                <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-                <div class="text-caption text-grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </q-card-section>
+                <q-card-section class="q-pt-none">
+                  tag： {{ 'war' }}
 
-              <q-card-actions>
-                <q-btn flat color="dark" label="Share" />
-                <q-btn flat color="primary" label="Book" />
+                </q-card-section>
+              </q-card>
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1659370391/amc-cdn/production/2/movies/69600/69572/PosterDynamic/140386.jpg">
 
-                <q-space />
+                <q-card-section>
+                  <div class="text-h6">Devotion</div>
+                  <div class="text-subtitle2">2 HR 20 MIN</div>
+                </q-card-section>
 
-                <q-btn
-                  color="grey"
-                  round
-                  flat
-                  dense
-                  :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'"
-                  @click="expanded = !expanded"
-                />
-              </q-card-actions>
-
-              <q-slide-transition>
-                <div v-show="expanded">
-                  <q-separator />
-                  <q-card-section class="text-subitle2">
-                    {{ 111 }}
-                  </q-card-section>
-                </div>
-              </q-slide-transition>
-            </q-card>
+                <q-card-section class="q-pt-none">
+                  tag： {{ 'war' }}
+                </q-card-section>
+              </q-card>
+            </div>
           </div>
         </div>
 
@@ -284,6 +234,9 @@ onMounted(() => {
     line-height: 20px
     text-align: center
     font-weight: bold
+    padding-left: 9vw
+    padding-top: 5vw
+    
 .info_box .logo
     margin-left: 5vw
     

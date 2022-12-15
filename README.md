@@ -23,3 +23,10 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 1. 添加了banner
 2. 加入了新的电影数据
 3. 电影卡片更新
+
+
+# log 2022/12/16
+1. mysql数据库设计table表
+2. 更新了新的banner样式
+3. 电影分类
+4. 电影卡排榜
