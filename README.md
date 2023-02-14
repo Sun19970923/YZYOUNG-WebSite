@@ -29,4 +29,4 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 1. mysql数据库设计table表
 2. 更新了新的banner样式
 3. 电影分类
-4. 电影卡排榜
+4. 电影卡排版

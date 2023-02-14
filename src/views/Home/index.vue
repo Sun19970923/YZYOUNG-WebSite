@@ -25,6 +25,7 @@
       <div class="content">
         <Swiper    
             class="mySwiper"
+            v-if="0"
             :loop="true"
             :speed="200"
             :navigation="true"
@@ -73,13 +74,13 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
           
           <h3>recommend</h3>
           <div class="q-pa-md row items-start q-gutter-md">
-            <div class="q-pa-md row items-start q-gutter-md">
+            <div class="q-pa-md row items-start q-gutter-md" style="width: 100%;">
               <q-card class="my-card">
                 <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1664804476/amc-cdn/production/2/movies/56500/56467/PosterDynamic/143958.jpg">
 
                 <q-card-section>
-                  <div class="text-h6">Black Panther: Wakanda Forever</div>
-                  <div class="text-subtitle2">2 HR 41 MINPG13Released Nov 11, 2022</div>
+                  <div class="text-h6 ellipsis1">Black Panther: Wakanda Forever</div>
+                  <div class="text-subtitle2 ellipsis1">2 HR 41 MINPG13Released Nov 11, 2022</div>
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
@@ -91,8 +92,8 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
                 <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1668003212/amc-cdn/production/2/movies/68300/68331/PosterDynamic/145720.jpg">
 
                 <q-card-section>
-                  <div class="text-h6">Violent Night</div>
-                  <div class="text-subtitle2">1 HR 52 MIN</div>
+                  <div class="text-h6 ellipsis1">Violent Night</div>
+                  <div class="text-subtitle2 ellipsis1">1 HR 52 MIN</div>
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
@@ -104,8 +105,8 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
                 <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1663766838/amc-cdn/production/2/movies/56500/56477/PosterDynamic/143261.jpg">
 
                 <q-card-section>
-                  <div class="text-h6">Strange World</div>
-                  <div class="text-subtitle2">1 HR 42 MIN</div>
+                  <div class="text-h6 ellipsis1">Strange World</div>
+                  <div class="text-subtitle2 ellipsis1">1 HR 42 MIN</div>
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
@@ -117,8 +118,8 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
                 <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1663614001/amc-cdn/production/2/movies/69600/69554/PosterDynamic/143200.jpg">
 
                 <q-card-section>
-                  <div class="text-h6">The Menu</div>
-                  <div class="text-subtitle2">1 HR 47 MIN</div>
+                  <div class="text-h6 ellipsis1">The Menu</div>
+                  <div class="text-subtitle2 ellipsis1">1 HR 47 MIN</div>
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
@@ -130,14 +131,16 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
                 <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1659370391/amc-cdn/production/2/movies/69600/69572/PosterDynamic/140386.jpg">
 
                 <q-card-section>
-                  <div class="text-h6">Devotion</div>
-                  <div class="text-subtitle2">2 HR 20 MIN</div>
+                  <div class="text-h6 ellipsis1">Devotion</div>
+                  <div class="text-subtitle2 ellipsis1">2 HR 20 MIN</div>
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
                   tag： {{ 'war' }}
                 </q-card-section>
               </q-card>
+              <!-- <HW :time="'100'" onTime="onTime()"/> -->
+
             </div>
           </div>
         </div>
@@ -165,6 +168,7 @@ import { ref, onMounted } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import SwiperCore, { Mousewheel, Autoplay, Navigation} from "swiper";
 import "swiper/css";
+import HW from '../../components/HelloWorld.vue'
 
 SwiperCore.use([ Mousewheel, Autoplay, Navigation]);
 
@@ -195,49 +199,75 @@ onMounted(() => {
 })
 </script>
 
-<style scoped lang="sass">
-.content
-  width: 100%
+<style scoped lang="scss">
+.content{
+  width: 100%;
+}
 
-.q-page-container
+
+.q-page-container{
   padding-right: 0
-.movies_content
+}
+
+.movies_content{
   padding: 16px
-.swiper-slide
-  width: 100% !important
-  margin-right: 0 !important
-  line-height: 100px
-  font-size: 30px
-  text-align: center
-  background-color: black
-.Hero--hasImage
-  width: 100%
-  height: 30vw
-  background-color: black
-  position: relative
-.Hero--hasImage .banner
-  width: 100%
-  height: auto
-.info_box
-    background: linear-gradient(90deg,#181818 10%,hsla(0,0%,9%,.98) 20%,hsla(0,0%,9%,.97) 25%,hsla(0,0%,9%,.95) 35%,hsla(0,0%,9%,.94) 40%,hsla(0,0%,9%,.92) 45%,hsla(0,0%,9%,.9) 50%,hsla(0,0%,9%,.87) 55%,hsla(0,0%,9%,.82) 60%,hsla(0,0%,9%,.75) 65%,hsla(0,0%,9%,.63) 70%,hsla(0,0%,9%,.45) 75%,hsla(0,0%,9%,.27) 80%,hsla(0,0%,9%,.15) 85%,hsla(0,0%,9%,.08) 90%,hsla(0,0%,9%,.03) 95%,hsla(0,0%,9%,0))
-    bottom: 0
-    content: ""
-    left: 0
-    position: absolute
-    right: -200px
-    top: 0
-    z-index: 1
-    width: 22vw
-    height: 100%
-    color: #fff
-    font-size: 16px
-    line-height: 20px
-    text-align: center
-    font-weight: bold
-    padding-left: 9vw
-    padding-top: 5vw
+}
+
+.swiper-slide{
+  width: 100% !important;
+  margin-right: 0 !important;
+  line-height: 100px;
+  font-size: 30px;
+  text-align: center;
+  background-color: black;
+}
+
+.Hero--hasImage{
+  width: 100%;
+  height: 30vw;
+  background-color: black;
+  position: relative;
+}
+
+.Hero--hasImage .banner{
+  width: 100%;
+  height: auto;
+}
+
+.info_box{
+    background: linear-gradient(90deg,#181818 10%,hsla(0,0%,9%,.98) 20%,hsla(0,0%,9%,.97) 25%,hsla(0,0%,9%,.95) 35%,hsla(0,0%,9%,.94) 40%,hsla(0,0%,9%,.92) 45%,hsla(0,0%,9%,.9) 50%,hsla(0,0%,9%,.87) 55%,hsla(0,0%,9%,.82) 60%,hsla(0,0%,9%,.75) 65%,hsla(0,0%,9%,.63) 70%,hsla(0,0%,9%,.45) 75%,hsla(0,0%,9%,.27) 80%,hsla(0,0%,9%,.15) 85%,hsla(0,0%,9%,.08) 90%,hsla(0,0%,9%,.03) 95%,hsla(0,0%,9%,0));
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: -200px;
+    top: 0;
+    z-index: 1;
+    width: 22vw;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 9vw;
+    padding-top: 5vw;
+}
+
     
-.info_box .logo
-    margin-left: 5vw
+.info_box .logo{
+  margin-left: 5vw;
+}
+.my-card{
+  width: 18%;
+  img{
+    width: 100%;
+    height: 400px;
+  }
+  // img
+  //   height: 200px
+  //   width: 100%
+  
+}
     
 </style>
