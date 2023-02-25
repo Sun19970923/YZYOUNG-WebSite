@@ -25,7 +25,7 @@
       <div class="content">
         <Swiper    
             class="mySwiper"
-            v-if="0"
+            v-if="1"
             :loop="true"
             :speed="200"
             :navigation="true"
@@ -72,20 +72,21 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
 
         <div class="movies_content">
           
-          <h3>recommend</h3>
+          <h3>Hot film</h3>
           <div class="q-pa-md row items-start q-gutter-md">
             <div class="q-pa-md row items-start q-gutter-md" style="width: 100%;">
               <q-card class="my-card">
-                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1664804476/amc-cdn/production/2/movies/56500/56467/PosterDynamic/143958.jpg">
+                <img src="https://www.boxofficepro.com/wp-content/uploads/2023/02/antmanwaspquant-cocainebear-jesusrevolution775x970-copy-479x600.png">
 
                 <q-card-section>
-                  <div class="text-h6 ellipsis1">Black Panther: Wakanda Forever</div>
-                  <div class="text-subtitle2 ellipsis1">2 HR 41 MINPG13Released Nov 11, 2022</div>
+                  <div class="text-h6 ellipsis1">Ant-Man and the Wasp: Quantumania to Conquer Again</div>
+                  <div class="text-subtitle2 ellipsis1">Shawn Robbins • February 22 2023</div>
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
-                  tag： {{ 'war' }}
-
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
                 </q-card-section>
               </q-card>
               <q-card class="my-card">
@@ -97,8 +98,9 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
-                  tag： {{ 'war' }}
-
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
                 </q-card-section>
               </q-card>
               <q-card class="my-card">
@@ -110,8 +112,9 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
-                  tag： {{ 'war' }}
-
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
                 </q-card-section>
               </q-card>
               <q-card class="my-card">
@@ -123,20 +126,98 @@ When an explosion in the Norwegian mountains awakens an ancient troll, officials
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
-                  tag： {{ 'war' }}
-
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
                 </q-card-section>
               </q-card>
               <q-card class="my-card">
                 <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1659370391/amc-cdn/production/2/movies/69600/69572/PosterDynamic/140386.jpg">
-
                 <q-card-section>
                   <div class="text-h6 ellipsis1">Devotion</div>
                   <div class="text-subtitle2 ellipsis1">2 HR 20 MIN</div>
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
-                  tag： {{ 'war' }}
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
+                </q-card-section>
+              </q-card>
+              <!-- <HW :time="'100'" onTime="onTime()"/> -->
+
+            </div>
+          </div>
+          <h3>Recommend</h3>
+          <div class="q-pa-md row items-start q-gutter-md">
+            <div class="q-pa-md row items-start q-gutter-md" style="width: 100%;">
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1664804476/amc-cdn/production/2/movies/56500/56467/PosterDynamic/143958.jpg">
+
+                <q-card-section>
+                  <div class="text-h6 ellipsis1">Black Panther: Wakanda Forever</div>
+                  <div class="text-subtitle2 ellipsis1">2 HR 41 MINPG13Released Nov 11, 2022</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
+                </q-card-section>
+              </q-card>
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1668003212/amc-cdn/production/2/movies/68300/68331/PosterDynamic/145720.jpg">
+
+                <q-card-section>
+                  <div class="text-h6 ellipsis1">Violent Night</div>
+                  <div class="text-subtitle2 ellipsis1">1 HR 52 MIN</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
+                </q-card-section>
+              </q-card>
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1663766838/amc-cdn/production/2/movies/56500/56477/PosterDynamic/143261.jpg">
+
+                <q-card-section>
+                  <div class="text-h6 ellipsis1">Strange World</div>
+                  <div class="text-subtitle2 ellipsis1">1 HR 42 MIN</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
+                </q-card-section>
+              </q-card>
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1663614001/amc-cdn/production/2/movies/69600/69554/PosterDynamic/143200.jpg">
+
+                <q-card-section>
+                  <div class="text-h6 ellipsis1">The Menu</div>
+                  <div class="text-subtitle2 ellipsis1">1 HR 47 MIN</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
+                </q-card-section>
+              </q-card>
+              <q-card class="my-card">
+                <img src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1659370391/amc-cdn/production/2/movies/69600/69572/PosterDynamic/140386.jpg">
+                <q-card-section>
+                  <div class="text-h6 ellipsis1">Devotion</div>
+                  <div class="text-subtitle2 ellipsis1">2 HR 20 MIN</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+                  <q-chip clickable color="teal" text-color="white" icon="bookmark">
+                    {{ 'war' }}
+                  </q-chip>
                 </q-card-section>
               </q-card>
               <!-- <HW :time="'100'" onTime="onTime()"/> -->
@@ -168,6 +249,9 @@ import { ref, onMounted } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import SwiperCore, { Mousewheel, Autoplay, Navigation} from "swiper";
 import "swiper/css";
+import {useRoute, useRouter} from 'vue-router'
+const route = useRoute();
+const router = useRouter();
 import HW from '../../components/HelloWorld.vue'
 
 SwiperCore.use([ Mousewheel, Autoplay, Navigation]);
@@ -187,6 +271,8 @@ const rightDrawerOpen: any = ref(false)
 const expanded: any = ref(false)
 
 const toggleRightDrawer: any = () => {
+  
+  router?.push("/login");
   rightDrawerOpen.value = !rightDrawerOpen.value
 }
 
@@ -206,11 +292,14 @@ onMounted(() => {
 
 
 .q-page-container{
-  padding-right: 0
+  padding-right: 0;
 }
 
 .movies_content{
-  padding: 16px
+  padding: 16px;
+  h3{
+    padding-left: 50px;
+  }
 }
 
 .swiper-slide{
@@ -264,6 +353,7 @@ onMounted(() => {
     width: 100%;
     height: 400px;
   }
+  
   // img
   //   height: 200px
   //   width: 100%
